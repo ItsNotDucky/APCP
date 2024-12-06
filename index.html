@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APCS Project 2</title>
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+	<script src="script.js"></script>
+</head>
+<body>
+	<h5>Gun Buying Decision Helper - Part 1</h5>
+	<label>Maximum Price</label>
+	<br><input id="txtmaxprice" type="text" placeholder="$$$" autofocus></input>
+	<br><label>Gun Type</label>
+	<br><label id="lbldropselect">. . .</label>
+	<div id="divdropcontent">
+		<button id="btnshot">Shotgun</button>
+		<br><button id="btnsnip">Sniper</button>
+		<br><button id="btnar">Assault Rifle</button>
+		<br><button id="btnsmg">Submachine Gun</button>
+		<br><button id="btnlmg">Light Machine Gun</button>
+	</div>
+	<div></div><label>Base Attachment</label>
+	<br><button id="btnyesattach" style="width: 123px;">Yes {+$400}</button>
+	<button id="btnnoattach" style="width: 123px;">No {+$0}</button>
+	<br><label>Completed</label>
+	<br><button id="btngenerate">Generate</button>
+	<div id="divdecisionoutput" style="display: none">
+		<br><h5>Gun Buying Decision Helper - Part 2</h5>
+		<label>Decision Output</label>
+		<br><label id="lbldecisionoutput" class="outputstate"></label>
+		<div id="divgunattachment" style="display: none">
+			<label>Gun Attachment</label>
+			<br><label class="outputstate">
+				Red Dot Sight: $75
+				<br>Vertical Foregrip: $45
+				<br>Flash Suppressor: $45
+				<br>Collapsible Stock: $50
+				<br>Detachable Magazine: $30
+				<br>Picatinny Rail: $25
+				<br>Laser Pointer: $30
+				<br>Weapon Light: $45
+				<br>Recoil Pad: $25
+				<br>Single-Point Sling: $30
+				<br>Improved Cylinder Choke: $30
+			</label>
+		</div>
+	</div>
+</body>
+</html>

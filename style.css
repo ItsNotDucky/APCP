@@ -1,0 +1,60 @@
+body {
+	background-image: url("https://th.bing.com/th/id/OIP.EdKPYlxQIaVUdxrNSDZ4wgHaE8?rs=1&pid=ImgDetMain");
+	background-repeat: repeat;
+	text-align: center;
+	zoom: 150%;
+}
+h5 {
+	color: white;
+	margin: 8px;
+}
+label, input, button {
+	width: 250px;
+	display: inline-block;
+	border: none;
+	border-radius: 2px;
+}
+input {
+	width: 246px;
+}
+label {
+	color: white;
+	text-align: left;
+}
+button {
+	background-color: white;
+	cursor: pointer;
+}
+button:hover, [name="selected"]:hover, [name="unselected"]:hover {
+	background-color: gray;
+}
+[class="outputstate"] {
+	color: black;
+	text-align: center;
+	background-color: white;
+	font-family: arial;
+}
+[id="lbldropselect"] {
+	color: black;
+	text-align: center;
+	background-color: darkgray;
+	cursor: pointer;
+}
+[id="divdropcontent"] {
+	width: 250px;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	background-color: white;
+	margin: auto;
+	display: none;
+}
+[id="lbldropselect"]:hover ~ [id="divdropcontent"], [id="divdropcontent"]:hover {
+	display: block;
+}
+[name="selected"] {
+	background-color: darkgray;
+}
+[name="unselected"] {
+	background-color: white;
+}
